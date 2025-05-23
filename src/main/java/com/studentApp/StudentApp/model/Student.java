@@ -15,6 +15,17 @@ public class Student {
     private String name;
     private int age;
     private int standard;
+    private String favSport;
+
+    public String getFavSport() {
+        return favSport;
+    }
+
+    public void setFavSport(String favSport) {
+        this.favSport = favSport;
+    }
+
+
 
     public Long getId() {
         return id;
@@ -48,13 +59,5 @@ public class Student {
         this.standard = standard;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", standard=" + standard +
-                '}';
-    }
+
 }

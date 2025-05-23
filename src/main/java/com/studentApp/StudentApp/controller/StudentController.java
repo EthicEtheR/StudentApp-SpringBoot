@@ -21,6 +21,7 @@ public class StudentController {
     public String createStudent(@RequestBody String details){
         System.out.println("Students details"+details);
         studentService.createStudent(details);
+        log.info("Check lombok");
 
         return "student created";
     }
@@ -28,6 +29,7 @@ public class StudentController {
     public String getStudents(){
         List<Student> studs=studentService.getAllStudent();
         System.out.println("list details"+studs);
+
         return studs.toString();
 
 

@@ -25,10 +25,7 @@ public class StudentService {
         stud1.setAge(stud.getAge());
         stud1.setName(stud.getName());
         stud1.setStandard(stud.getStandard());
-
-        stud1.setName(stud.getName());
-        stud1.setAge(stud.getAge());
-        stud1.setStandard(stud.getStandard());
+        stud1.setFavSport(stud.getFavSport());
         studentRepository.save(stud1);
    }
 
